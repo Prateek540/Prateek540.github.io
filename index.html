@@ -1,122 +1,69 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Incredible Ppizzas</title>
-        <link rel="stylesheet" href="style.css" type="text/css">
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-        <script src="https://kit.fontawesome.com/1e3fe3b40a.js" crossorigin="anonymous"></script>
-        
-    </head>
-    <body>
+<head>
+	<title>Form</title>
+<link rel="stylesheet" href="Style.css">
+</head>
+<body>
 
-        <header>
-            <nav>
-                <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#pizzas">Ppizzas</a></li>
-                <li><a href="#stores">Stores</a></li>
-                <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="strapline-container">
-            <h1 class="main-strapline">Incredible Pizzas</h1>
-            <h3 class="second-strapline">Pizzas full of toppings and extra cheese.</h3>
-            </div>
-        </header>
+<div class="hero"> 
 
-        <main>
+<div class="form-box">
+	<div class="button-box"> 
+		<div id="btn"></div>
+		<button type="button" class="toggle-btn" onclick="login()">Log In</button>
+		<button type="button" class="toggle-btn" onclick="signup()">Sign Up</button>
 
-            <section class="about-section">
-                <a name="about"></a>
-                <h3 class="section-title">About</h3>
-                <div class="about-container">
-                    <div class="left-box"><p>Pizza basically involves a crust usually made of flour, eggs, salt, and other flavoring, tomato sauce or pesto sauce, mozzarella cheese, and toppings. Toppings can be quite simple such as basil leaves or quite complicated such as pineapples, sausages, and even kabob meat.
+	</div>
+	<div class="social-icons"> 
+ 
+<img src="Fb.jpg">
+<img src="Tw.jpg">
+<img src="Ig.jpg">
 
-                        You can have a quite healthy pizza or a quite high calorie pizza depends on what type of crust or toppings you choose.
-                        The Oxford dictionary defines pizza as:
-                        noun.</p><br><br>
-                        
-                       <p>A dish of Italian origin, consisting of a flat round base of dough baked with a topping of tomatoes and cheese, typically with added meat, fish, or vegetables: ‘a cheese and tomato pizza’
-                        
-                        [mass noun] ‘a slice of pizza’
-                        
-                        [as modifier] ‘a pizza restaurant’
-                        
-                        Another take on Pizza would be: Possibly one of the easiest and tastiest forms of take-out to eat. Depending on the toppings you choose and what other ingredients are used to make it, Pizza can be a simple, healthy meal.</p></div>
-                    <div class="right-box">
-                        <div class="top-row">
-                            <div class="grid-image-one"></div>
-                            <div class="grid-image-two"></div>
-                        </div>
-                        <div class="bottom-row">
-                            <div class="grid-image-three"></div>
-                            <div class="grid-image-four"></div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+ </div>
 
-            <section class="pizza-section">
-                <a name="pizzas"></a>
-                <h3 class="section-title">Ppizzas</h3>
-                <div class="image-container">
-                    <div class="row-one">
-                        <div class="grid-item" id="pizza-one"></div>
-                        <div class="grid-item" id="pizza-two"></div>
-                        <div class="grid-item" id="pizza-three"></div>
-                    </div>
-                    <div class="row-two">
-                        <div class="grid-item" id="pizza-four"></div>
-                        <div class="grid-item" id="pizza-five"></div>
-                        <div class="grid-item" id="pizza-six"></div>
-                    </div>
-                    <div class="row-three">
-                        <div class="grid-item" id="pizza-seven"></div>
-                        <div class="grid-item" id="pizza-eight"></div>
-                        <div class="grid-item" id="pizza-nine"></div>
-                    </div>
-                </div>
-            </section>
+ <form class="input-group" id="login"> 
+ 
+ <input type="text" class="input-field" placeholder="User Id" required>
+ <input type="text" class="input-field" placeholder="Enter Password" required>
+ <input type="checkbox" class="check-box"><span>Remember Password</span>
+ <button type="submit" class="submit-btn">Log In</button>
 
-            <section class="store-section">
-                <a name="stores"></a>
-                <h3 class="section-title">Stores</h3>
-                <div class="store-container">
-                    <div class="store-div">
-                        <h4>Saharaganj branch</h4>
-                        <p>Near hazratganz chauraha , Hazratganz Lucknow.</p>
-                    </div>
-                    <div class="store-div">
-                        <h4>Singar nagar branch</h4>
-                        <p>Near alambagh metro station , alambagh Lucknow.</p>
-                    </div>
-                    <div class="store-div">
-                        <h4>Fun branch</h4>
-                        <p>Fun Republic top floor , Gomti Nagar Lucknow.</p>
-                    </div>
-                </div>
-            </section>
-        </main>
-        <footer class="contact-section">
-            <a name="contact"></a>
-            <h3 class="contact-title">Contact</h3>
-            <div>
-                <p class="email">incredibleppizzas@gmail.com</p>
-                <div class="social-media-div">
-                <div class="social-media-icon">
-                    <i class="fab fa-facebook fa-3x"></i>
-                </div>
-                <div class="social-media-icon">
-                    <i class="fab fa-instagram-square fa-3x"></i>
-                </div>
-                <div class="social-media-icon">
-                    <i class="fab fa-twitter-square fa-3x"></i>
-                </div>
-                </div>
-                <p>&copy;incredibleppizzas2020</p>
-            </div>
-        </footer>
+ </form>
+ <form class="input-group" id="signup"> 
+ 
+ <input type="text" class="input-field" placeholder="User Id" required>
+ <input type="email" class="input-field" placeholder="Email Id" required>
+ <input type="text" class="input-field" placeholder="Enter Password" required>
+ <input type="checkbox" class="check-box"><span>I agree to the Terms and Conditions</span>
+ <button type="submit" class="submit-btn">Sign Up</button>
 
-    </body>
+ </form>
+
+
+ </div>
+ 
+</div>
+
+<script> 
+
+var x=document.getElementById("login");
+var y=document.getElementById("signup");
+var z=document.getElementById("btn");
+function signup()
+{
+	x.style.left = "-400px";
+	y.style.left = "50px";
+	z.style.left = "110px";
+}
+
+function login()
+{
+	x.style.left = "50px";
+	y.style.left = "450px";
+	z.style.left = "0px";
+}
+</script>
+</body>
 </html>
